@@ -24,5 +24,5 @@ Route::match(array('GET', 'POST'), '/incoming', function()
 
 Route::get('/', function()
 {
-	return View::make('hello');
+	return View::make('home');
 });
