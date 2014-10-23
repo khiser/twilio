@@ -11,6 +11,7 @@
 |
 */
 
+/*
 Route::match(array('GET', 'POST'), '/incoming', function()
 {
  $twiml = new Services_Twilio_Twiml();
@@ -18,6 +19,12 @@ Route::match(array('GET', 'POST'), '/incoming', function()
  $response = Response::make($twiml, 200);
  $response->header('Content-Type', 'text/xml');
   return $response;
+});
+*/
+
+Route::get('/incoming', function()
+{
+	return ('hello');
 });
 
 Route::get('/', function()
