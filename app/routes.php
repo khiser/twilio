@@ -15,7 +15,7 @@
 Route::match(array('GET', 'POST'), '/incoming', function()
 {
  $twiml = new Services_Twilio_Twiml();
- $twiml->say('Hello - You app answered your phone douchbag!');
+ $twiml->say('Hello Allison - Kevin has written an app that answered your phone call, douchbag!');
  $response = Response::make($twiml, 200);
  $response->header('Content-Type', 'text/xml');
   return $response;
